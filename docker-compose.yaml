@@ -1,0 +1,10 @@
+services:
+  sandbox_docker:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      target: sandbox-server
+    container_name: sandbox-server
+    hostname: sandbox-server
+    ports:
+      - 8022:22
